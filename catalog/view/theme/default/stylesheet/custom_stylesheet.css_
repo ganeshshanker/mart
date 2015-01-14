@@ -1,0 +1,677 @@
+@charset "utf-8";
+
+/* product_slider.css */
+
+.infiniteCarousel {
+
+	width: 980px;
+
+	height: 355px;
+
+	position: relative;
+
+	padding-left: 2px;
+
+}
+
+.infiniteCarousel .wrapper {
+
+	width: 970px; /* .infiniteCarousel width - (.wrapper margin-left + .wrapper margin-right) */
+
+	overflow: auto;
+
+	min-height: 350px;
+
+	margin: 0 0px;
+
+	position: absolute;
+
+	top: 0;
+
+}
+
+.infiniteCarousel .wrapper ul {
+
+	width: 980px; /* single item * n */
+
+	list-style-image: none;
+
+	list-style-position: outside;
+
+	list-style-type: none;
+
+	margin: 0;
+
+	padding: 0;
+
+	position: relative;
+
+	top: 0;
+
+	z-index: 1000;
+
+}
+
+.infiniteCarousel ul li {
+
+	display: block;
+
+	float: left;
+
+	padding: 4px;
+
+	min-height: 300px;
+
+	width: 186px;
+
+	text-align: center;
+
+}
+
+.infiniteCarousel ul li img {
+
+	padding: 3px;
+
+	border: 1px solid #E7E7E7;
+
+	margin-bottom: 5spx;
+
+}
+
+.infiniteCarousel ul li .name a {
+
+	color: #38B0E3;
+
+	font-weight: bold;
+
+	text-decoration: none;
+
+	display: block;
+
+	margin-bottom: 4px;
+
+	height: 45px;
+
+}
+
+.infiniteCarousel ul li .price {
+
+	display: block;
+
+	font-weight: bold;
+
+	color: #333333;
+
+	margin-bottom: 4px;
+
+	font-size: 11pt;
+
+}
+
+.infiniteCarousel ul li .price-old {
+
+	text-decoration: line-through;
+
+}
+
+.infiniteCarousel ul li .price-new {
+
+	color: #F00;
+
+	font-weight: bold;
+
+}
+
+.infiniteCarousel ul li .rating {
+
+	display: block;
+
+	margin-bottom: 4px;
+
+}
+
+.infiniteCarousel ul:hover li img {
+
+/*border-color: #666;*/
+
+}
+
+.infiniteCarousel ul:hover li:hover img {
+
+/*border-color:#999;*/
+
+}
+
+.infiniteCarousel ul li a img {
+
+	display: block;
+
+}
+
+.infiniteCarousel .arrow {
+
+	display: block;
+
+	height: 36px;
+
+	width: 36px;
+
+	text-indent: -999px;
+
+	position: absolute;
+
+	top: 150px;
+
+	cursor: pointer;
+
+	outline: 0;
+
+	z-index: 1001;
+
+}
+
+.infiniteCarousel .forward {
+
+	background: url(../image/button-next.png) no-repeat 0 0;
+
+	background-position: 0 0;
+
+	right: -19px;
+
+}
+
+.infiniteCarousel .back {
+
+	background: url(../image/button-previous.png) no-repeat 0 0;
+
+	background-position: 0 0;
+
+	left: -6px;
+
+}
+
+.infiniteCarousel .forward:hover {
+
+	background-position: 0 -36px;
+
+}
+
+.infiniteCarousel .back:hover {
+
+	background-position: 0 -108px;
+
+}
+
+/* cloud-zoom.css */
+
+
+
+
+
+/* This is the moving lens square underneath the mouse pointer. */
+
+.cloud-zoom-lens {
+
+	border: 4px solid #888;
+
+	margin: -4px;	/* Set this to minus the border thickness. */
+
+	background-color: #fff;
+
+	cursor: move;
+
+}
+
+/* This is for the title text. */
+
+.cloud-zoom-title {
+
+	font-family: Arial, Helvetica, sans-serif;
+
+	position: absolute !important;
+
+	background-color: #000;
+
+	color: #fff;
+
+	padding: 3px;
+
+	width: 100%;
+
+	text-align: center;
+
+	font-weight: bold;
+
+	font-size: 10px;
+
+	top: 0px;
+
+}
+
+/* This is the zoom window. */
+
+.cloud-zoom-big {
+
+	border: 4px solid #ccc;
+
+	overflow: hidden;
+
+}
+
+/* This is the loading message. */
+
+.cloud-zoom-loading {
+
+	color: white;
+
+	background: #222;
+
+	padding: 3px;
+
+	border: 1px solid #000;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/*Dewali Specila Css for Homapage */
+
+
+
+@media screen and (max-width:1289px) {
+
+#wrapper {
+
+	display: none;
+
+}
+
+#myimage {
+
+	display: none;
+
+}
+
+.top-right {
+
+	display: none;
+
+}
+
+}
+
+@media screen and (min-width:1290px) {
+
+#wrapper {
+
+	position: fixed;
+
+	bottom: 0px;
+
+	float: right;
+
+	clear: both;
+
+}
+
+#myimage {
+
+	display: block;
+
+	position: relative;
+
+	margin: auto;
+
+	width: 145px;
+
+}
+
+}
+
+
+
+/* Category Left Menu*/
+
+
+
+
+
+.navleft {
+
+	width: 190px;
+
+	height: 310px;
+
+	border: 1px #c0c0c0 solid;
+
+	margin-bottom: 10px;
+
+}
+
+.box3 {
+
+	width: 190px;
+
+	height: 20px;
+
+	margin-bottom: 15px;
+
+}
+
+.box3 a {
+
+	text-decoration: none;
+
+	font-size: 17px;
+
+	line-height: 30px;
+
+	display: block;
+
+	border-bottom: 1px #d3d3d3 solid;
+
+	color: #2b5470;
+
+	font-family: calibri;
+
+	padding-left: 45px;
+
+}
+
+.img {
+
+	background: url(http://www.skbmart.com/image/casio-80x80.jpg) 10px 4px no-repeat;
+
+}
+
+.img2 {
+
+	background: url(http://www.skbmart.com/image/super_for_sale.png) 10px 4px no-repeat;
+
+}
+
+.img3 {
+
+	background: url(http://www.skbmart.com/image/valentinespecial.jpg) 10px 4px no-repeat;
+
+}
+
+.img4 {
+
+	background: url(http://www.skbmart.com/image/fashion.jpg) 10px 4px no-repeat;
+
+}
+
+.img5 {
+
+	background: url(http://www.skbmart.com/image/watchescollection.jpg) 10px 4px no-repeat;
+
+}
+
+.img6 {
+
+	background: url(http://www.skbmart.com/image/bollywood-collection-apparel-img.jpg) 10px 4px no-repeat;
+
+}
+
+.img7 {
+
+	background: url(http://www.skbmart.com/image/latestarrivals.png) 10px 4px no-repeat;
+
+}
+
+.img8 {
+
+	background: url(http://www.skbmart.com/image/lehenga-choli.png) 10px 4px no-repeat;
+
+}
+
+.box3 a:hover {
+
+	color: #096;
+
+}
+
+.navleft ul {
+
+	list-style-type: none;
+
+	padding: 0;
+
+	margin: 0;
+
+}
+
+.navleft ul li {
+
+	font-family: calibri;
+
+	display: block;
+
+	padding: 0px 0px 0 0px;
+
+	font-size: 14px;
+
+	border-bottom: 1px #c0c0c0 solid;
+
+	color: #000;
+
+	text-align: center;
+
+}
+
+.navleft ul li a {
+
+	color: #000;
+
+	text-decoration: none;
+
+}
+
+.navleft ul li a:hover {
+
+	color: #096;
+
+}
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+/* Home Page Top Menu*/
+
+
+
+*{
+
+	margin:0;
+
+	padding:0;
+
+}
+
+
+
+.oe_overlay{
+
+	background:#000;
+
+	opacity:0;
+
+	position:fixed;
+
+	top:0px;
+
+	left:0px;
+
+	width:100%;
+
+	height:100%;
+
+}
+
+ul.oe_menu {
+text-align: center;
+list-style: none;
+position: relative;
+margin-bottom: 5px;
+width: 1008px;
+float: left;
+clear: both;
+}
+
+ul.oe_menu > li {
+width: auto;
+height: 40px;
+padding: 0;
+float: left;
+position: relative;
+margin: 0;
+display: inline-block;
+}
+
+
+ul.oe_menu > li > a {
+line-height: 31px;
+float: left;
+font-family: 'Oswald', sans-serif;
+background-color: #2b5470;
+color: #fff;
+text-decoration: none;
+font-weight: normal;
+font-size: 13px;
+width: auto;
+padding: 0 21px;
+letter-spacing: 0.5px;
+border-right: 1px #fff solid;
+}
+
+ul.oe_menu > li > a:hover,
+
+ul.oe_menu > li.selected > a{
+
+ 
+
+	color:#fff;
+
+	background: #93AEC9;
+
+	opacity: 0.9;
+
+}
+
+.oe_wrapper ul.hovered > li > a{
+
+	background:#2b5470;
+
+	
+
+}
+
+ul.oe_menu div{
+
+border-left: 1px #c0c0c0 solid;
+border-top: 5px #000 solid;
+border-bottom: 1px #c0c0c0 solid;
+border-right: 1px #c0c0c0 solid;
+
+	position:absolute;
+
+	top:38px;
+
+	left:1px;
+
+	background:#fff;
+
+	width:944px;
+
+	height:265px;
+
+	padding:30px;
+
+	display:none;
+
+}
+
+ul.oe_menu div ul li a{
+
+	text-decoration:none;
+
+	font-family:calibri;
+
+	color:#222;
+
+	padding:2px 2px 2px 4px;
+
+	margin:2px;
+
+	display:block;
+
+	font-size:15px;
+
+	width:160px;
+
+}
+
+ul.oe_menu div ul.oe_full{
+
+	width:100%;
+
+}
+
+ul.oe_menu div ul li a:hover{
+
+	background:#000;
+
+	color:#fff;
+
+}
+
+ul.oe_menu li ul{
+
+	list-style:none;
+
+	float:left;
+
+	width: 230px;
+
+	margin-right:10px;
+
+	line-height:15px;
+
+}
+
+li.oe_heading{
+
+	color:#000;
+
+	font-family:calibri;
+
+	font-size:18px;
+
+	margin-bottom:10px;
+
+	padding-bottom:6px;
+
+	border-bottom:1px solid #ddd;
+
+}
+

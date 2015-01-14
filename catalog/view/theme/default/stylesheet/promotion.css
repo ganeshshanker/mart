@@ -1,0 +1,25 @@
+/* promotion */
+.promotion { 
+	display:inline; 
+	text-align: center;
+} 
+.promotion > div {
+	display:inline; 
+	text-align: center;
+} 
+.promotion > div img { 
+	display:inline-block;
+	margin:2px;
+	border: 1px solid #DBDEE1;
+	padding: 0px; /*5px*/
+	text-align: center;
+	margin-bottom: 10px;
+}
+.promotion div img:hover{
+	/*-moz-transform:scale(1.02);When hover on images image size will increased*/
+	-moz-box-shadow:0px 0px 10px #ccc;
+	/*-webkit-transform:scale(1.02);/*When hover on images image size will increased*/
+	-webkit-box-shadow:0px 0px 10px #ccc;
+	/*-webkit-transform:scale(1.02);/*When hover on images image size will increased*/
+	-webkit-box-shadow:0px 0px 10px #ccc;
+	} 
