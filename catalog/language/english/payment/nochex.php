@@ -1,4 +1,4 @@
-<?php
-// Text
-$_['text_title'] = 'Credit Card / Debit Card (NOCHEX)';
+<?php
+// Text
+$_['text_title'] = 'Credit Card / Debit Card (NOCHEX)';
 ?>

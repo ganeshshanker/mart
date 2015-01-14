@@ -1,4 +1,4 @@
-<?php
-// Text
-$_['text_title'] = 'Free Checkout';
+<?php
+// Text
+$_['text_title'] = 'Free Checkout';
 ?>

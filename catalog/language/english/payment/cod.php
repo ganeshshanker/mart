@@ -1,4 +1,4 @@
-<?php
-// Text
-$_['text_title'] = 'Cash On Delivery';
+<?php
+// Text
+$_['text_title'] = 'Cash On Delivery';
 ?>
